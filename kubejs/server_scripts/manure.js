@@ -1,4 +1,4 @@
-ServerEvents.recipes(e => {
+ServerEvents.recipes((e) => {
     const { kubejs, minecraft } = e.recipes;
     /**
      * @param {string} id -字符串

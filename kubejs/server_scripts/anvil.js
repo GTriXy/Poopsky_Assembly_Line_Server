@@ -1,4 +1,4 @@
-ServerEvents.recipes(e => {
+ServerEvents.recipes((e) => {
     //屎做的草方块
     e.custom({
         type: 'anvilcraft:anvil_processing',

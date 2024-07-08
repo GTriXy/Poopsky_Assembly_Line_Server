@@ -1,39 +1,33 @@
-ServerEvents.recipes((event) => {
-    event.custom({
+ServerEvents.recipes((e) => {
+    e.custom({
         "type": "tconstruct:melting",
         "ingredient": {
-           "item": "manure:manure"
+            "item": "manure:manure"
         },
         "result": {
-            "fluid": "kubejs:shit_fluid",
+            "fluid": "kubejs:manure",
             "amount": 9000
         },
         "temperature": 800,
         "time": 10
     });
-    event.custom({
+    e.custom({
         "type": "tconstruct:casting_basin",
-"fluid": {
+        "fluid": {
             "amount": 81000,
             "name": "kubejs:andesite_alloy_fluid"
         },
         "result": "create:andesite_alloy_block",
         "cooling_time": 120
     });
-    event.custom({
-            "type": "tconstruct:material",
-            "ingredient": {
-                "item": "manure:manure" 
-            },
-            "material": "kubejs:",
-            "needed": 1,
-            "value": 1
+    e.custom({
+        "type": "tconstruct:material",
+        "ingredient": {
+            "item": "manure:manure"
+        },
+        "material": "kubejs:",
+        "needed": 1,
+        "value": 1
     });
-
-
-
-
-
-
 });
 

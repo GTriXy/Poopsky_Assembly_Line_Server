@@ -1,4 +1,4 @@
-// ServerEvents.recipes((event) => {
+// ServerEvents.recipes((e) => {
 //     event.custom({
 
 //     });

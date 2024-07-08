@@ -1,4 +1,4 @@
-ServerEvents.recipes(e => {
+ServerEvents.recipes((e) => {
     //岩浆
     e.custom({
         type: 'lychee:item_inside',
