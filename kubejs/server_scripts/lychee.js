@@ -1,4 +1,4 @@
-ServerEvents.recipes((e) => {
+ServerEvents.recipes(e => {
     //岩浆
     e.custom({
         type: 'lychee:item_inside',
@@ -68,22 +68,4 @@ ServerEvents.recipes((e) => {
             }
         ]
     }).id('poopsky:item_inside_moss_block');
-    //洗屎得球
-    e.custom({
-        type: 'lychee:item_inside',
-        item_in: [
-            {
-                item: 'kubejs:manure_ball'
-            }
-        ],
-        block_in: {
-            blocks: ['water']
-        },
-        post: [
-            {
-                type: 'drop_item',
-                item: 'slime_ball'
-            }
-        ]
-    }).id('poopsky:item_inside_slime_ball');
 })

@@ -1,4 +1,4 @@
-BlockEvents.rightClicked((e) => {
+BlockEvents.rightClicked(e => {
     const { player, block, server, level } = e;
 
     if (e.hand != 'main_hand') return;

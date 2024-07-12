@@ -1,15 +1,24 @@
-StartupEvents.registry('fluid', (e) => {
-    e.create('manure')
-        .thinTexture(0x47311A)
-        .thickTexture(0x47311A)
-        .bucketColor(0x47311A)
-        .noBlock()
-        .displayName('Manure');
-
-    e.create('molten_andesite_alloy')
-        .thinTexture(0x6C7C72)
-        .thickTexture(0x6C7C72)
-        .bucketColor(0x6C7C72)
-        .noBlock()
-        .displayName('Molten Andesite Alloy');
+StartupEvents.registry("fluid", event => {
+    let example_fluid = event.create("shit_fluid")
+        .thinTexture(0x3c2611)
+        .thickTexture(0x3c2611)
+        .temperature(300)
+        .bucketColor(0x3c2611)
+        .displayName("shit fluid");
+    let exampleAttributes = example_fluid.createAttributes();
+    exampleAttributes.dropOff(2);
+    exampleAttributes.tickDelay(20);
+    example_fluid.attributes = exampleAttributes;
+});
+StartupEvents.registry("fluid", event => {
+    let example_fluid = event.create("andesite_alloy_fluid")
+        .thinTexture(0x6c7c72)
+        .thickTexture(0x6c7c72)
+        .temperature(300)
+        .bucketColor(0x6c7c72)
+        .displayName("andesite alloy fluid");
+    let exampleAttributes = example_fluid.createAttributes();
+    exampleAttributes.dropOff(2);
+    exampleAttributes.tickDelay(20);
+    example_fluid.attributes = exampleAttributes;
 });

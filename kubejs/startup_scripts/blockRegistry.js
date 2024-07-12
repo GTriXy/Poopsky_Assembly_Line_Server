@@ -1,11 +1,16 @@
-StartupEvents.registry('block', (e) => {
+StartupEvents.registry('block', (event) => {
     //撤锁
     /**
      * @param {string} name -字符串
      * @param {string} displayName -字符串
      */
     function toilet(name, displayName) {
-        e.create(name)
+        event.create(name)
+            .box(0, 0, 0, 5 / 16, 1, 1, false)
+            .box(11 / 16, 0, 0, 1, 1, 1, false)
+            .box(5 / 16, 0, 0, 11 / 16, 12 / 16, 1, false)
+            .box(5 / 16, 12 / 16, 0, 11 / 16, 1, 1 / 16, false)
+            .box(5 / 16, 12 / 16, 15 / 16, 11 / 16, 1, 1, false)
             .model('kubejs:block/' + name)
             .stoneSoundType()
             .color(0, 0x47311A)
@@ -38,7 +43,7 @@ StartupEvents.registry('block', (e) => {
     toilet('rainbow_concrete_toilet', 'Rainbow Concrete Toilet');
 
     //粪块
-    e.create('manure_block')
+    event.create('manure_block')
         .model('kubejs:block/manure_block')
         .soundType('mud')
         .hardness(.1)
@@ -46,14 +51,14 @@ StartupEvents.registry('block', (e) => {
         .tagBlock('minecraft:mineable/hoe')
         .displayName('Manure Block');
     //粪楼梯
-    e.create('manure_stairs', 'stairs')
+    event.create('manure_stairs', 'stairs')
         .soundType('mud')
         .hardness(.1)
         .resistance(0.0)
         .tagBlock('minecraft:mineable/hoe')
         .displayName('Manure Stairs');
     //粪半砖
-    e.create('manure_slab', 'slab')
+    event.create('manure_slab', 'slab')
         .model('kubejs:block/manure_slab')
         .soundType('mud')
         .hardness(.1)
@@ -61,14 +66,14 @@ StartupEvents.registry('block', (e) => {
         .tagBlock('minecraft:mineable/hoe')
         .displayName('Manure Slab');
     //粪墙
-    e.create('manure_wall', 'wall')
+    event.create('manure_wall', 'wall')
         .soundType('mud')
         .hardness(.1)
         .resistance(0.0)
         .tagBlock('minecraft:mineable/hoe')
         .displayName('Manure Wall');
     //粪栅栏门
-    e.create('manure_fence_gate', 'fence_gate')
+    event.create('manure_fence_gate', 'fence_gate')
         .soundType('mud')
         .hardness(.1)
         .resistance(0.0)
