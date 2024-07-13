@@ -1,10 +1,17 @@
 {
-    "material.poopsky.shit":"硬粪便",
-    "material.poopsky.shit.flavor":"嗨嗨嗨",
-    "material.poopsky.shit.encyclopedia":"便宜且能自我修复，感觉屎也香起来了",
-    "fluid.kubejs.shit_fluid": "熔融粪便",
+    "material.poopsky.poop":"硬粪便",
+    "material.poopsky.poop.flavor":"嗨嗨嗨",
+    "material.poopsky.poop.encyclopedia":"便宜且能自我修复，感觉屎也香起来了",
+    "fluid.kubejs.poop_fluid": "熔融粪便",
     "fluid.kubejs.andesite_alloy_fluid": "熔融屎山合金",
     "item.kubejs.andesite_alloy_fluid_bucket": "熔融屎山合金桶",
-    "item.kubejs.shit_fluid_bucket": "熔融粪便桶",
-    "fluid.kubejs.flowing_shit_fluid": "熔融粪便"
+    "item.kubejs.poop_fluid_bucket": "熔融粪便桶",
+    "fluid.kubejs.flowing_poop_fluid": "熔融粪便",
+    "item.kubejs.venusian_poop":"金星粪便",
+    "item.kubejs.lunar_poop":"月球粪便",
+    "item.kubejs.ice_crystal_poop":"冰晶粪便",
+    "item.kubejs.martian_poop":"火星粪便",
+    "item.kubejs.pp_mixture":"粪便尿液混合物",
+    "item.kubejs.undigested_fibre":"未消化的纤维",
+    "item.kubejs.undigested_seed":"未消化的种子"
 }
