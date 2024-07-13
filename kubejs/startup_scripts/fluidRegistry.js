@@ -1,10 +1,10 @@
 StartupEvents.registry("fluid", event => {
-    let example_fluid = event.create("shit_fluid")
+    let example_fluid = event.create("poop_fluid")
         .thinTexture(0x3c2611)
         .thickTexture(0x3c2611)
         .temperature(300)
         .bucketColor(0x3c2611)
-        .displayName("shit fluid");
+        .displayName("poop fluid");
     let exampleAttributes = example_fluid.createAttributes();
     exampleAttributes.dropOff(2);
     exampleAttributes.tickDelay(20);

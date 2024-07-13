@@ -10,7 +10,7 @@ ServerEvents.recipes((event) => {
               },
               {
                 "amount": 2700,
-                "fluid": "kubejs:shit_fluid"
+                "fluid": "kubejs:poop_fluid"
               }
             ],
             "results": [

@@ -5,7 +5,7 @@ ServerEvents.recipes((event) => {
            "item": "manure:manure"
         },
         "result": {
-            "fluid": "kubejs:shit_fluid",
+            "fluid": "kubejs:poop_fluid",
             "amount": 9000
         },
         "temperature": 800,
